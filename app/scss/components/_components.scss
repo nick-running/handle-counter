@@ -1,0 +1,73 @@
+@import "../_variables";
+
+$top-nav-height: 40px;
+.top-nav {
+  min-width: $width-primary;
+  background-color: $color-dark;
+  height: $top-nav-height;
+  line-height: $top-nav-height;
+  color: $color-grey-primary;
+  font-size: $font-mini;
+  .nav-box {
+    float: left;
+    height: $top-nav-height;
+    line-height: $top-nav-height;
+  }
+  a {
+    margin-left: 10px;
+  }
+  a:hover {
+    color: $color-default;
+  }
+}
+.med-nav{
+  min-width: $width-primary;
+  background-color: $color-primary;
+  ul{
+    overflow: hidden;
+    li{
+      float: left;
+      margin-right: 10px;
+      a{
+        display: block;
+        padding: 0 20px;
+        text-align: center;
+        color: $color-default;
+        font-size: 16px;
+        line-height: 45px;
+      }
+      a:hover{
+        background-color: $color-primary-active;
+      }
+    }
+    li.active>a{
+      background-color: $color-primary-active;
+    }
+  }
+}
+
+/*keep footer always on bottom*/
+$footer-height: 40px;
+html,
+body {
+  height: 100%;
+}
+
+#container {
+  min-height: 100%;
+  position: relative;
+}
+
+#body {
+  padding-bottom: $footer-height+20; /* Height of the footer */
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: $footer-height; /* Height of the footer */
+  background-color: $color-dark;
+}
+
+/*keep footer always on bottom end*/
