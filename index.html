@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>handle counter</title>
+    <link rel="stylesheet" href="app/css/main.css">
+</head>
+<body>
+    <div class="container margin-top">
+        <div class="handle-counter" id="handleCounter">
+            <button class="counter-minus btn btn-primary">-</button>
+            <input type="text" value="3">
+            <button class="counter-plus btn btn-primary">+</button>
+        </div>
+        <div class="handle-counter" id="handleCounter2">
+            <button class="counter-minus btn btn-primary">-</button>
+            <input type="text" value="3">
+            <button class="counter-plus btn btn-primary">+</button>
+        </div>
+
+    </div>
+    <script src="app/js/jquery-2.2.4/jquery-2.2.4.js"></script>
+    <script src="app/js/handleCounter.js"></script>
+    <script>
+        $(function ($) {
+            var options = {
+                minimum: 2,
+                maximize: 20,
+                onChange: valChanged,
+                onMinimum: function(e) {
+                    console.log('最小了'+e)
+                },
+                onMaximize: function(e) {
+                    console.log('最大了'+e)
+                }
+            }
+            $('#handleCounter').handleCounter(options)
+        })
+        function valChanged(d) {
+//            console.log(d)
+        }
+    </script>
+</body>
+</html>
