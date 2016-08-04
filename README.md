@@ -1,0 +1,1 @@
+Simpl,lightweight and easy to use jQuery handle count plugin
