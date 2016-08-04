@@ -18,9 +18,6 @@
         $btnMinus = $handleCounter.find('.counter-minus')
         $input = $handleCounter.find('input')
         $btnPlugs = $handleCounter.find('.counter-plus')
-        $.each($btnMinus, function (i, ele) {
-            console.log(ele)
-        })
         var defaultOpts = {
             writable: true,
             minimum: 1,
