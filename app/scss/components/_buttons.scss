@@ -1,0 +1,17 @@
+.btn{
+  padding:6px 12px;
+  border: 1px solid transparent;
+  color: $color-default;
+}
+.btn:disabled,
+.btn:disabled:hover{
+  background-color: darkgrey;
+  cursor: not-allowed;
+}
+.btn-primary{
+  background-color: $color-primary;
+}
+.btn-primary:hover,
+.btn-primary:focus{
+  background-color: $color-primary-active;
+}

@@ -1,0 +1,21 @@
+.handle-counter{
+  overflow: hidden;
+  .counter-minus,
+  .counter-plus,
+  input{
+    float: left;
+    text-align: center;
+  }
+
+  .counter-minus,
+  .counter-plus{
+    //width: 24px;
+    text-align: center;
+  }
+  input{
+    width: 50px;
+    border-width: 1px;
+    border-left: none;
+    border-right: none;
+  }
+}

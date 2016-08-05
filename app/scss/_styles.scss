@@ -1,0 +1,14 @@
+@import "variables";
+body{
+  font-family: '微软雅黑',arial;
+  font-size: 14px;
+}
+.percent{
+  width: percentage(6/7);
+}
+.panel-primary{
+  border-color: $color-primary;
+}
+input{
+  padding: 6px 12px;
+}

@@ -1,0 +1,14 @@
+@import "variables";
+@import "basic/normalize";
+@import "layouts";
+@import "styles";
+@import "components/_components";
+@import "components/_handle-counter.scss";
+@import "components/_buttons.scss";
+@import "utilities";
+@import "basic/themes";
+
+//quick test
+.border{
+  border: 1px solid red;
+}
