@@ -1,0 +1,16 @@
+@mixin box-shadow($position, $color) {
+  @if $position == "top" {
+    -webkit-box-shadow: 0 -2px 2px $color;
+    -moz-box-shadow: 0 -2px 2px $color;
+    box-shadow: 0 -2px 2px $color;
+  }@else if($position=="bottom"){
+    -webkit-box-shadow: 0 2px 2px $color;
+    -moz-box-shadow: 0 2px 2px $color;
+    box-shadow: 0 2px 2px $color;
+  }
+}
+@mixin border-radius($radius){
+  -webkit-border-radius:$radius;
+  -moz-border-radius:$radius;
+  border-radius:$radius;
+}
