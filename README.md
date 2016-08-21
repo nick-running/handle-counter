@@ -1,1 +1,1 @@
-Simple,lightweight and easy to use jQuery handle count plugin, it can minus num, plus num, edit num with validation.
+#Simple,lightweight and easy to use jQuery handle count plugin, it can minus num, plus num, edit num with validation.
