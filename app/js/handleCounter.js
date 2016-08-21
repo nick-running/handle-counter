@@ -32,7 +32,6 @@
         onChange = settings.onChange
         onMinimum = settings.onMinimum
         onMaximize = settings.onMaximize
-        //validate minimum, reverting to default if needed
         if (!$.isNumeric(minimum)) {
             minimum = defaultOpts.minimum
         }
@@ -74,8 +73,8 @@
                 }
                 var reg = new RegExp("^[\\d]*$")
                 if (isNaN(parseInt(num)) || !reg.test(num)) {
-                    $input.val($input.attr('data-num'))
-                    changeVal($input.attr('data-num'))
+                    $input.val($input.data('num'))
+                    changeVal($input.data('num'))
                 } else if (num < minimum) {
                     $input.val(minimum)
                     changeVal(minimum)
@@ -93,7 +92,7 @@
         })
 
         function changeVal(num) {
-            $input.attr('data-num', num)
+            $input.data('num', num)
             $btnMinus.prop('disabled', false)
             $btnPlugs.prop('disabled', false)
             if (num <= minimum) {
