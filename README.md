@@ -7,6 +7,7 @@
 * onMinimum //when the counter reached minimum number(function)
 * onMaximize //when the counter reached maximize number(function)
 ####Example
+
 ```
 var options = {
     minimum: 1,
