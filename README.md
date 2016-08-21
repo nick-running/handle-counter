@@ -6,8 +6,8 @@
 * onChange //when the counter is changing(function)
 * onMinimum //when the counter reached minimum number(function)
 * onMaximize //when the counter reached maximize number(function)
+
 ####Example
-test
 ```
 var options = {
     minimum: 1,
