@@ -13,14 +13,17 @@ var options = {
     minimum: 1,
     maximize: 10,
     onChange: valChanged,
-    onMinimum: function(e) {
-        console.log('reached minimum: '+e)
+    onMinimum: function(num) {
+        console.log('reached minimum: '+num)
     },
-    onMaximize: function(e) {
-        console.log('reached maximize'+e)
+    onMaximize: function(num) {
+        console.log('reached maximize'+num)
     }
 }
-```
 $('#handleCounter').handleCounter(options)
+function valChanged(num){
+        console.log('current number is '+num)
+}
+```
 </code>
 
