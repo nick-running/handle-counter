@@ -1,4 +1,4 @@
-###Simple,lightweight and easy to use jQuery handle count plugin, it can minus num, plus num, edit num with validation.
+###Simple,lightweight and easy to use jQuery handle count plugin, it can minus number, plus number, edit number with validation.
 ####params
 * minimum //the minimum number(Number)
 * maximize //the maximize number(Number)
